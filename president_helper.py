@@ -3,7 +3,7 @@ from nltk.tokenize import PunktSentenceTokenizer
 from collections import Counter
 
 def read_file(file_name):
-  with open(file_name, 'r+', encoding='utf-8') as file:
+  with open(file_name, 'r+', encoding='unicode-escape') as file:
     file_text = file.read()
   return file_text
 
